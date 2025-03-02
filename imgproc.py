@@ -13,3 +13,4 @@ def process_image(image_path, output_folder):
 
             img_resized.save(output_path)
             print(f"Processed and saved: {output_path}")
+    except Exception as e:
