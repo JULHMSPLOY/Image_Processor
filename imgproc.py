@@ -24,3 +24,7 @@ def main(input_folder, output_folder):
         
         with multiprocessing.Pool() as pool:
             pool.starmap(process_image, [(image, output_folder) for image in image_files])
+
+if __name__ == "__main__":
+    input_folder = "input_images"  
+    output_folder = "output_images" 
