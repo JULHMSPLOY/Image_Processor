@@ -12,3 +12,4 @@ def process_image(image_path, output_folder):
             output_path = os.path.join(output_folder, f"processed_{filename}")
 
             img_resized.save(output_path)
+            print(f"Processed and saved: {output_path}")
