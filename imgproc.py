@@ -27,4 +27,6 @@ def main(input_folder, output_folder):
 
 if __name__ == "__main__":
     input_folder = "input_images"  
-    output_folder = "output_images" 
+    output_folder = "output_images"
+
+    main(input_folder, output_folder) 
