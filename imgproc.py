@@ -17,3 +17,4 @@ def process_image(image_path, output_folder):
         print(f"Error processing {image_path}: {e}")
 
 def main(input_folder, output_folder):
+    if not os.path.exists(output_folder):
