@@ -9,3 +9,4 @@ def process_image(image_path, output_folder):
             img_resized = img_gray.resize((128, 128))
 
             filename = os.path.basename(image_path)
+            output_path = os.path.join(output_folder, f"processed_{filename}")
