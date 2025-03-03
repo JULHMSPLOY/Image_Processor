@@ -17,6 +17,7 @@
 
 # Libraries
 - Pillow สำหรับการประมวลผลภาพ
-'''sh
+  
+```sh
 pip install tqdm
-'''
+```
