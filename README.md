@@ -7,7 +7,7 @@
 - บันทึกไฟล์ภาพที่ถูกประมวลผลแล้วไปยังโฟลเดอร์ปลายทาง
   
 # Programming Language
-- Python
+- Python สำหรับการประมวลผลภาพ การจัดการไฟล์ และการใช้งานการประมวลผลขนาน (parallel processing)
   
 
 # Libraries
