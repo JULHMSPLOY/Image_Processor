@@ -21,19 +21,6 @@
 - แปลงภาพเป็นขาวดำ (Grayscale)
 - ปรับขนาดภาพเป็น 128x128 พิกเซล
 - แสดงแถบสถานะความคืบหน้าแบบเรียลไทม์
-  
-# Setup
-- Pillow สำหรับการประมวลผลภาพ
-  
-```sh
-pip install pillow
-```
-
-- tqdm สำหรับแสดงแถบสถานะความคืบหน้า
-
-```sh
-pip install tqdm
-```
 
 # Directory Structure
 
@@ -60,8 +47,21 @@ Image_Processor/
 ├── README.md               # คำอธิบาย Project
 ├── imgproc.py              # สคริปต์ Python ที่ใช้ในการประมวลผลภาพ                    
 └── requirements.txt        # ไฟล์ที่ใช้ระบุไลบรารีที่ Project ต้องการ
-
 ```
+
+# Setup
+- Pillow สำหรับการประมวลผลภาพ
+  
+```sh
+pip install pillow
+```
+
+- tqdm สำหรับแสดงแถบสถานะความคืบหน้า
+
+```sh
+pip install tqdm
+```
+
 # Usage
 - เปิดไฟล์ภาพ, แปลงภาพเป็นขาวดำ (Grayscale), ปรับขนาดภาพเป็น 128x128 pixels และบันทึกภาพที่ประมวลผลแล้ว
 
