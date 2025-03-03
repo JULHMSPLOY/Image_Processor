@@ -45,12 +45,19 @@ Image_Processor/
 │   ├── cat2.jpg
 │   ├── cat3.jpg
 │   ├── cat4.jpg
-│   └── cat5.jpg
+│   ├── cat5.jpg
+│   ├── dog1.jpg
+│   ├── dog2.jpg
+│   ├── dog3.jpg
+│   ├── dog4.jpg
+│   └── dog5.jpg
 │
 ├── output_images/          # โฟลเดอร์ที่เก็บภาพที่ประมวลผลแล้ว
 │
-└── imgproc.py              # สคริปต์ Python ที่ใช้ในการประมวลผลภาพ
-└── README.md               # คำอธิบาย Project
+├── LICENSE.md              # ข้อกำหนดลิขสิทธิ์ของ Project
+├── README.md               # คำอธิบาย Project
+├── imgproc.py              # สคริปต์ Python ที่ใช้ในการประมวลผลภาพ                    
+└── requirements.txt        # ไฟล์ที่ใช้ระบุไลบรารีที่ Project ต้องการ
 
 ```
 # Usage
