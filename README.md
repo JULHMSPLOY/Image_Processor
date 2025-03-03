@@ -54,8 +54,10 @@ Image_Processor/
 │
 ├── output_images/          # โฟลเดอร์ที่เก็บภาพที่ประมวลผลแล้ว
 │
-└── imgproc.py              # สคริปต์ Python ที่ใช้ในการประมวลผลภาพ
-└── README.md               # คำอธิบาย Project
+├── LICENSE.md              # ข้อกำหนดลิขสิทธิ์ของ Project
+├── README.md               # คำอธิบาย Project
+├── imgproc.py              # สคริปต์ Python ที่ใช้ในการประมวลผลภาพ                    
+└── requirements.txt        # ไฟล์ที่ใช้ระบุไลบรารีที่ Project ต้องการ
 
 ```
 # Usage
