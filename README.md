@@ -46,13 +46,15 @@ Image_Processor/
 │   ├── cat3.jpg
 │   ├── cat4.jpg
 │   ├── cat5.jpg
-│   ├── dog1.jpg
-│   ├── dog2.jpg
-│   ├── dog3.jpg
-│   ├── dog4.jpg
-│   └── dog5.jpg
+│   ├── dog1.png
+│   ├── dog2.png
+│   ├── dog3.png
+│   ├── dog4.png
+│   └── dog5.png
 │
 ├── output_images/          # โฟลเดอร์ที่เก็บภาพที่ประมวลผลแล้ว
+│   ├── processed_cat1.jpg  # ตัวอย่างผลลัพธ์หลังจากการประมวลผล
+│   └── processed_dog3.png  
 │
 ├── LICENSE.md              # ข้อกำหนดลิขสิทธิ์ของ Project
 ├── README.md               # คำอธิบาย Project
@@ -112,6 +114,17 @@ pip install -r requirements.txt
 Image_Processor/
 │
 ├── input_images/           # โฟลเดอร์ที่เก็บภาพที่ต้องการประมวลผล
+│   ├── cat1.jpg
+│   ├── cat2.jpg
+│   ├── cat3.jpg
+│   ├── cat4.jpg
+│   ├── cat5.jpg
+│   ├── dog1.png
+│   ├── dog2.png
+│   ├── dog3.png
+│   ├── dog4.png
+│   ├── dog5.png
+│   └── ...
 ```
 
 - ระบุ path ของโฟลเดอร์ในตัวแปร input_folder และ output_folder
@@ -124,6 +137,14 @@ output_folder = "output_images"  # ระบุโฟลเดอร์ที่
 - Run the Program
 ```sh
 python imgproc.py
+```
+
+- Output After Running the Program
+```sh
+├── output_images/          # โฟลเดอร์ที่เก็บภาพที่ประมวลผลแล้ว
+│   ├── processed_cat1.jpg  # ตัวอย่างผลลัพธ์หลังจากการประมวลผล
+│   ├── processed_dog3.png
+│   └── ...
 ```
 # License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
