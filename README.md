@@ -19,5 +19,29 @@
 - Pillow สำหรับการประมวลผลภาพ
   
 ```sh
+pip install pillow
+```
+
+- tqdm สำหรับแสดงแถบสถานะความคืบหน้า
+
+```sh
 pip install tqdm
+```
+
+# Structure
+
+```sh
+Image_Processor/
+│
+├── input_images/           # โฟลเดอร์ที่เก็บภาพที่ต้องการประมวลผล
+│   ├── cat1.jpg
+│   ├── cat2.jpg
+│   ├── cat3.jpg
+│   ├── cat4.jpg
+│   └── cat5.jpg
+│
+├── output_images/          # โฟลเดอร์ที่เก็บภาพที่ประมวลผลแล้ว
+│
+└── imgproc.py              # สคริปต์ Python ที่ใช้ในการประมวลผลภาพ
+
 ```
