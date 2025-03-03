@@ -108,6 +108,11 @@ Image_Processor/
 ```
 
 - ระบุ path ของโฟลเดอร์ในตัวแปร input_folder และ output_folder
+  
+```sh
+input_folder = "input_images"    # ระบุโฟลเดอร์ที่มีภาพที่ต้องการประมวลผล
+output_folder = "output_images"  # ระบุโฟลเดอร์ที่เก็บภาพที่ประมวลผลแล้ว
+```
 
 - Run the Program
 ```sh
