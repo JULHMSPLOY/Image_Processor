@@ -29,6 +29,7 @@ def main(input_folder, output_folder):
 
     if len(image_files) == 0:
         print("No images found.")
+        return
 
         with multiprocessing.Pool() as pool:
             list(tqdm(pool.starmap(process_image, [(image, output_folder) for image in image_files]), total = len (image_files)))
