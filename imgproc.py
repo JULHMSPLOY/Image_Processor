@@ -1,6 +1,7 @@
 import os
 import multiprocessing
 from PIL import Image
+from tqdm import tqdm
 
 def process_image(image_path, output_folder):
     try:
@@ -23,7 +24,7 @@ def main(input_folder, output_folder):
         image_files = [os.path.join(input_folder, f) for f in os.listdir(input_folder) if f.endswith(('jpg', 'png', 'jpeg'))]
         
         with multiprocessing.Pool() as pool:
-            pool.starmap(process_image, [(image, output_folder) for image in image_files])
+            list(tqdm(pool.starmap(process_image, [(image, output_folder) for image in image_files]), total = len (image_files)))
 
 if __name__ == "__main__":
     input_folder = "input_images"  
