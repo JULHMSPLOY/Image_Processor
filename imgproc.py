@@ -12,7 +12,8 @@ def process_image(image_path, output_folder):
 
             filename = os.path.basename(image_path)
             output_path = os.path.join(output_folder, f"processed_{filename}")
-
+            
+            print(f"Saving image to: {output_path}")
             img_resized.save(output_path)
             print(f"Processed and saved: {output_path}")
     except Exception as e:
