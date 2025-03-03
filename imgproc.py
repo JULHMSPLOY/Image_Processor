@@ -9,9 +9,8 @@ def process_image(image_path, output_folder):
         # แสดงช้อความเริ่มต้นการเปิดรูปภาพ
         print(f"Opening image: {image_path}")
 
-        # เปิดภาพและแปลงเป็นภาพขาวดำ (grayscale)
         with Image.open(image_path) as img:
-            img_gray = img.convert('L')
+            img_gray = img.convert('L') # เปิดภาพและแปลงเป็นภาพขาวดำ (grayscale)
 
             # ปรับขนาดของภาพเป็น 128x128 พิกเซล
             img_resized = img_gray.resize((128, 128))
