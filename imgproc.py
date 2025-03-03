@@ -31,8 +31,8 @@ def main(input_folder, output_folder):
         print("No images found.")
         return
 
-        with multiprocessing.Pool() as pool:
-            list(tqdm(pool.starmap(process_image, [(image, output_folder) for image in image_files]), total = len (image_files)))
+    with multiprocessing.Pool() as pool:
+        list(tqdm(pool.starmap(process_image, [(image, output_folder) for image in image_files]), total = len (image_files)))
 
 if __name__ == "__main__":
     input_folder = "C:\\Users\\asus\\OneDrive\\Desktop\\เอกสาร\\241-152\\ImgProc\\input_images"  
