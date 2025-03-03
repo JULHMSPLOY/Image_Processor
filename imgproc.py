@@ -25,7 +25,10 @@ def main(input_folder, output_folder):
 
     image_files = [os.path.join(input_folder, f) for f in os.listdir(input_folder) if f.endswith(('jpg', 'png', 'jpeg'))]
 
-    print(f"Found {len(image_files)} images to process.") 
+    print(f"Found {len(image_files)} images to process.")
+
+    if len(image_files) == 0:
+        
         with multiprocessing.Pool() as pool:
             list(tqdm(pool.starmap(process_image, [(image, output_folder) for image in image_files]), total = len (image_files)))
 
