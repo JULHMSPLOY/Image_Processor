@@ -45,7 +45,12 @@ Image_Processor/
 │   ├── cat2.jpg
 │   ├── cat3.jpg
 │   ├── cat4.jpg
-│   └── cat5.jpg
+│   ├── cat5.jpg
+│   ├── dog1.jpg
+│   ├── dog2.jpg
+│   ├── dog3.jpg
+│   ├── dog4.jpg
+│   └── dog5.jpg
 │
 ├── output_images/          # โฟลเดอร์ที่เก็บภาพที่ประมวลผลแล้ว
 │
