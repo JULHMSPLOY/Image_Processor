@@ -5,6 +5,7 @@ from tqdm import tqdm
 
 def process_image(image_path, output_folder):
     try:
+        print(f"Opening image: {image_path}")
         with Image.open(image_path) as img:
             img_gray = img.convert('L')
             img_resized = img_gray.resize((128, 128))
@@ -27,7 +28,7 @@ def main(input_folder, output_folder):
             list(tqdm(pool.starmap(process_image, [(image, output_folder) for image in image_files]), total = len (image_files)))
 
 if __name__ == "__main__":
-    input_folder = "input_images"  
-    output_folder = "output_images"
+    input_folder = "C:\\Users\\asus\\OneDrive\\Desktop\\เอกสาร\\241-152\\ImgProc\\input_images"  
+    output_folder = "C:\\Users\\asus\\OneDrive\\Desktop\\เอกสาร\\241-152\\ImgProc\\output_images"
 
     main(input_folder, output_folder) 
