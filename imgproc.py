@@ -35,7 +35,7 @@ def main(input_folder, output_folder):
         list(tqdm(pool.starmap(process_image, [(image, output_folder) for image in image_files]), total = len (image_files)))
 
 if __name__ == "__main__":
-    input_folder = "C:\\Users\\asus\\OneDrive\\Desktop\\เอกสาร\\241-152\\ImgProc\\input_images"  
-    output_folder = "C:\\Users\\asus\\OneDrive\\Desktop\\เอกสาร\\241-152\\ImgProc\\output_images"
+    input_folder = "input_images"  
+    output_folder = "output_images"
 
     main(input_folder, output_folder) 
